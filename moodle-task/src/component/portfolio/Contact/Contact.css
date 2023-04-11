@@ -1,0 +1,65 @@
+.fancy {
+    padding: 1em;
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+   border-bottom: solid 2px white;
+    /* At the bottom of our background stack,
+       let's have a misty grey solid color */
+    background-color: #0d0d0d;
+  
+    /* We stack linear gradients on top of each
+       other to create our color strip effect.
+       As you will notice, color gradients are
+       considered to be images and can be
+       manipulated as such */
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #140202 95%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 95%, #181616 95%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 90%, #151406 90%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 92%, #100f01 92%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 85%, #1a1716 85%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 89%, #190e05 89%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 80%, #0f0b0b 80%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 86%, #0f0d0d 86%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 75%, #211f22 75%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 83%, #131214 83%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 70%, #181919 70%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 80%, #111212 80%);
+  }
+
+  .aboutdiv
+  {
+    
+    max-height: 120vh;
+    
+  
+}
+
+.headpc {
+    
+  
+   color: #4CAF50;
+   font-family: Lora;
+ }
+ .headpc:hover
+ {
+  
+   padding: 10px;
+  
+   color: white;
+ text-shadow: 2px 2px 4px #000000;
+ }
+ .evalimgc:hover
+{
+ 
+  width:50px;
+  height:50px;
+  font-family: Lora;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+.anstyle{
+  text-decoration: none;
+  color:whitesmoke
+}

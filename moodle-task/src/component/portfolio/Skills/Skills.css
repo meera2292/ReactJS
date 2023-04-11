@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap');
+.card1{
+    background-color:#020000 !important;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    
+}
+
+
+.maindiv
+{
+   /* border: 2px solid black !important; */
+  
+   border: none !important;
+
+   
+    
+}
+.headingcontent
+{
+    color:#262c33;
+    font-family:Bree Serif !important;
+   
+    font-size: 25px;
+    
+}
+.facts
+{
+    color:#17d55a;
+    font-family:Bree Serif !important;
+   
+    font-size: 20px;
+    
+}
+
+
+.pcontent
+{
+    font-family:'Roboto', sans-serif ;
+    color:#7b8794!important;
+    font-weight:lighter !important;
+}
+.textinput
+{
+
+    border: none;
+    outline: none;
+}
+.divbg
+{
+    background-color: black;
+    border-radius: 25px;
+}
+.divwrap
+{
+    position: relative; 
+    height: 595.062px;
+}
+.divmodal
+{
+    position: absolute; 
+    left: 0%;
+     top: 0px;
+}
+.cdivs
+{
+    background-color: #000000;
+   
+   
+}
+.aboutdivs{
+    
+
+  padding-bottom: 6%;
+
+ background-color: aliceblue;
+}
+
+ .textstyle
+ {
+    font-family:'Roboto', sans-serif ;
+    font-weight:400; 
+    font-size: medium;
+    color: #ccc5b9;
+    background-color:#22223b ;
+ }
+ .contentdiv:hover
+ {
+background-color: #9a8c98;
+ }
+
+ .headp {
+    
+    text-transform: capitalize;
+    color: #4CAF50;
+    font-family: Lora;
+  }
+  .headp:hover
+  {
+   
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  
+  .logs
+  {
+    
+    height: 180px;
+  }
+  .cards
+  {
+    border: none;
+  }
+.bghoverstyle:hover
+{
+    background-color: transparent;
+    margin: auto;
+    border: 1px solid black;
+
+    background-color:whitesmoke;
+    color: white;
+    animation: mymove 5s infinite;
+    
+}
+@keyframes mymove {
+    25% {transform: rotate(360deg);}
+  }

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@500;700&family=Lora:wght@400;700&family=Merriweather:ital,wght@1,700&family=Roboto&family=Sono:wght@600&display=swap');
+
+
+.menubgs
+{
+    
+    font-family:Lora ;
+    font-size: 17px;
+    
+    background-color: #372549;
+    border-color: gray;
+    border-bottom:1px solid #4c3a5f;
+    animation:rotate 100s;
+    animation-timing-function:steps(4);
+    animation-delay: 2s;
+    animation-direction: reverse;
+ 
+
+    
+   
+}
+
+
+@keyframes rotate
+{
+  0%{background-color: #372549;}
+  25%  {background-color: #311f43;}
+  50%  {background-color: #452f5a;}
+  100% {background-color: #3f2855;}
+}

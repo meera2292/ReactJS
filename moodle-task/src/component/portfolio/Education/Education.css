@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@500;700&family=Lora:wght@400;700&family=Merriweather:ital,wght@1,700&family=Roboto&family=Sono:wght@600&display=swap');
+.cdive
+{
+
+    background-color:#131213;
+    color: grey;
+   
+}
+.aboutdive{
+    
+   padding-bottom: 6%;
+    background-color:#131314;
+
+    
+  
+}
+.mainp
+{
+    
+  text-align: justify;
+  letter-spacing: 2px;
+  font-family: Lora;
+}
+
+.headp {
+    
+    text-transform: capitalize;
+    color: #4CAF50;
+    font-family: Lora;
+  }
+  .headp:hover
+  {
+   
+    padding: 10px;
+   
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+  }
+  
+.evalimg:hover
+{
+ 
+  width:100px;
+  height:100px;
+  font-family: Lora;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+.fan {
+    padding: 1em;
+    width: 100%;
+   
+    box-sizing: border-box;
+   border-bottom: solid 2px white;
+   background-color: black;
+    
+  
+    
+    background-image: linear-gradient(175deg, rgba(2, 68, 126, 0) 95%, #1a5d89 95%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 95%, #090909 95%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 90%, #090909 90%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 92%, #090909 92%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 85%, #090909 85%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 89%, #090909 89%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 80%, #090909 80%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 86%, #0d0606 86%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 75%, #100f10 75%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 83%, #070707 83%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 70%, #000a0b 70%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 80%, #0d0e0e 80%);
+  }
+  .schoolcolg  {
+    width:150px;
+    height: 150px;
+  }
+  
+  .schoolcolg:hover
+  {
+      background-color: transparent;
+      margin: auto;
+      border: 1px solid black;
+     
+      background-color:whitesmoke;
+      color: white;
+      animation: mymovestyle 5s infinite;
+      width:200px;
+      height:200px;
+      box-shadow: inset;
+      
+  }
+  @keyframes mymovestyle {
+      50% {transform: rotate(15deg);}
+    }
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@500;700&family=Lora:wght@400;700&family=Merriweather:ital,wght@1,700&family=Roboto&family=Sono:wght@600&display=swap');
+.cdivabt
+{
+
+    padding-bottom: 6%;
+   
+}
+.aboutdiv{
+    
+ background-color: #888888;
+   
+    
+  
+}
+.mainp
+{
+    
+  text-align: justify;
+  letter-spacing: 3px;
+  
+  font-family: Lora;
+}
+
+.headp {
+    
+    text-transform: capitalize;
+    color:#023e8a;
+    font-family: Lora;
+  }
+  .headp:hover
+  {
+   
+    padding: 10px;
+   
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+  }
+  
+.evalimg:hover
+{
+ 
+  width:100px;
+  height:100px;
+  font-family: Lora;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.cbot
+{
+  width:800x;
+   height:500px;
+}
+.descethics
+{
+  font-size: 12px;
+}

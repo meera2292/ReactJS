@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@500;700&family=Lora:wght@400;700&family=Merriweather:ital,wght@1,700&family=Roboto&family=Sono:wght@600&display=swap');
+
+.maindiv{
+   
+ 
+    background-color:#372549;
+    padding-bottom: 6%;
+    animation:rotate 100s;
+    animation-timing-function:steps(4);
+    animation-delay: 2s;
+    animation-direction: reverse;
+  
+    
+}
+
+.quotepara{
+    font-family:Dancing Script !important;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+.mainpara
+{
+    font-family:Bree Serif !important;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+    
+    
+}
+
+.pname
+{
+    font-family:'Roboto', sans-serif ;
+    font-size: 25px;
+    animation: names 10s;
+}
+
+
+
+
+@keyframes names {
+  0%{text-shadow: 1px 1px 2px black, 0 0 25px rgb(213, 213, 226), 0 0 5px rgb(236, 236, 244);}
+  25%{text-shadow: 1px 1px 2px black, 0 0 25px rgb(213, 196, 198), 0 0 5px rgb(193, 193, 199);}
+  50%{text-shadow: 1px 1px 2px black, 0 0 25px rgb(221, 211, 214), 0 0 5px rgb(144, 144, 213);}
+  100%{text-shadow: 1px 1px 2px black, 0 0 25px rgb(128, 157, 128), 0 0 5px rgb(163, 163, 195);}
+}
+
+
+
+.letters:hover
+{
+   
+   
+    animation: mymovestyle 5s infinite;
+
+
+    
+}
+@keyframes mymovestyle 
+{
+    50% {transform: rotate(180deg);}
+}
+
