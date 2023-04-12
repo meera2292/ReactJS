@@ -1,10 +1,11 @@
-.div1{
-   width:300px;
-    height: 10vh;
 
-}
-.mdiv{
-    
-    height: 73vh;
 
+.mbgn
+{
+    height: 90vh;
+    background-image: url('pexels-photo.jpeg');
+    background-size: cover;
+    z-index: 0;
+   
+  
 }

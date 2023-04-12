@@ -1,9 +1,16 @@
-#Simg
+.Simg
 {
-    
     background-image: url('th.jpeg');
-    padding-bottom: 6%;
     background-size: cover;
-    min-height: 100%;
+    z-index: -1;
+}
+
+.mbg
+{
+    height: 90vh;
+    background-image: url('new.webp');
+    background-size: cover;
+    z-index: 0;
    
+  
 }

@@ -10,7 +10,7 @@ export function Notification(){
     return(
 
         <>
-       <div className=" d-flex justify-content-around bg-black mdiv">
+       <div className=" d-flex justify-content-around mbgn">
     
         <div>
        

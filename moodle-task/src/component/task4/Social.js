@@ -8,22 +8,14 @@ export function Social(){
 
         <>
        
-       <div class="container-fluid col-lg-12 row  mx-auto" id="Simg">
-       <p className="fs-1 d-flex justify-content-center text-white fw-bold">Social Buttons</p>
+       <div class="container-fluid col-lg-12 row  mx-auto Simg">
+       <p className="fs-1 d-flex justify-content-center text-secondary fw-bold">Social Buttons</p>
           
-            <div class="col-lg-8 container-fluid row  rounded-3 py-5">
+            <div class="container-fluid text-center  mbg py-5">
+                    <button type="button "class="btn btn-warning m-3">Like</button>
+                    <button type="button" class="btn btn-danger m-3">Comment</button>
+                    <button type="button" class="btn btn-info m-3">Share</button>
 
-                    <div class="col-lg-4 ">
-                    <button type="button "class="btn btn-warning">Like</button>
-                    </div>
-
-                    <div class="col-lg-4">
-                    <button type="button" class="btn btn-light">Commend</button>
-                    </div>
-
-                    <div class="col-lg-4 ">
-                    <button type="button" class="btn btn-primary">Share</button>
-                    </div>
             </div>
 
 
