@@ -1,14 +1,9 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css'
-
 import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import { MenuPortfolio } from './component/portfolio/MenuPortfolio/MenuPortfolio';
 import './App.css';
-
 import 'bootstrap/dist/js/bootstrap.bundle'
-
 import { Home } from './component/portfolio/Home/Home';
-
 import { Menu } from './component/Menu/Menu';
 import { About } from './component/portfolio/About/About';
 import { Hello} from './component/task1/Hello';
@@ -43,7 +38,6 @@ function App()
     <Route path='/Certification' element={[<MenuPortfolio/>,<Certification/>]}></Route>
     <Route path='/Education' element={[<MenuPortfolio/>,<Education/>]}></Route>
     <Route path='/Contact' element={[<MenuPortfolio/>,<Contact/>]}></Route>
-  
     <Route path='/Moodle' element={[<Menu/>,<Hello/>]}></Route>
     <Route path='/Hello' element={[<Menu/>,<Hello/>]}></Route>
     <Route path='/League' element={[<Menu/>,<League/>]}></Route>
