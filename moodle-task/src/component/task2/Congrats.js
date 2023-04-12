@@ -22,7 +22,7 @@ export function Congrats(){
                               <p className="  d-flex justify-content-center fw-bold text-success">KGiSL Insititute Of Technology Coimbatore,Tamil Nadu </p>
                               <p className="  d-flex justify-content-center"> <img src={watchimg} alt="" className=""></img></p>
 
-                             </div>
+                        </div>
 
                     </div>
             
