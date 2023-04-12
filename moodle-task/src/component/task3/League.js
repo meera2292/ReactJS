@@ -7,29 +7,20 @@ export function League(){
     return(
 
         <>
-         <div class="container-fluid row aboutdiv  ">
+         <div class="container-fluid row bg-black mx-auto">
          <h1 className="text-center fw-bold text-white">Super  Over League</h1>    
-            <div class="col-lg-2">
+            <div class="col-lg-2"> </div>
+            <div class="col-lg-8  row  py-5">
 
-            </div>
-            <div class="col-lg-8 container-fluid row  rounded-3 py-5">
-
-                <div class="col-lg-6 ">
-                <img src={mainimg} alt="" className="col-lg-12 containerfluid"></img>
-                </div>
-
-                <div class="col-lg-6  ">
-                <img src={watchimg} alt="" className="col-lg-12 containerfluid"></img>
+                <div class="col-lg-12">
+                <img src={mainimg} alt="" className="col-lg-6 img-fluid"></img>
+                <img src={watchimg} alt="" className="col-lg-6 img-fluid"></img>
                 </div>
 
 
             </div>
 
-            <div class="col-lg-2">
-
-            </div>
-                
-              
+        <div class="col-lg-2"></div>
         </div>
 				        
 
