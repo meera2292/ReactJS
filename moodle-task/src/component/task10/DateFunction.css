@@ -1,0 +1,14 @@
+.Simgdate
+{
+   background-color: black;
+}
+
+.mbgdate
+{
+    height: 90vh;
+    background-image: url('pexels-photo-date.jpeg');
+    background-size: cover;
+    z-index: 0;
+   
+  
+}

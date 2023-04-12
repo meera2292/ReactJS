@@ -1,4 +1,18 @@
-.imgsiz{
+.imgsiz
+{
     width:70px;
     height:70px;
 }
+
+.cardsoftec
+{
+   border-right: 3px solid red;
+   border-top: 3px solid red;
+  
+}
+.cardsoftec:hover
+{
+   
+   padding: 10px;
+   box-shadow: 80px 90px 90px rgb(13, 13, 13) inset;
+} 

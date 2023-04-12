@@ -18,7 +18,7 @@ export function Feedback(){
 
         <>
 
-        <div class="container-fluid row border mbg  mx-auto">
+        <div class="container-fluid row border mbgf  mx-auto">
         <h1 className="text-center">How satisfied are you with our customer service</h1>
         
             <div class="col-lg-4 container-fluid  bg-white justify-content-center rounded-3 py-5 mt-5 mb-5">

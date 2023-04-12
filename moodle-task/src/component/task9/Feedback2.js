@@ -15,9 +15,9 @@ export function Feedback2(){
     return(
 
         <>
-          <div class="container-fluid row cbg mx-auto">
+          <div class="container-fluid row cbgfs mx-auto">
             <div class="col-lg-4"></div>
-            <div class="col-lg-4 container-fluid row  bg-white mbg rounded-3 py-5 mt-5 mb-5 mx-auto " >
+            <div class="col-lg-4 container-fluid row  bg-white mbgf rounded-3 py-5 mt-5 mb-5 mx-auto " >
 
                 
                 <img src={heart} alt="" className=" container-fluid "></img>

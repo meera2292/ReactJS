@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../task3/League.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import mainimg from '../task3/rcb-img.png';
 import watchimg from '../task3/csk-img.png';
@@ -7,7 +7,7 @@ export function League(){
     return(
 
         <>
-         <div class="container-fluid row bg-black mx-auto">
+         <div class="container-fluid row mbgL mx-auto">
          <h1 className="text-center fw-bold text-white">Super  Over League</h1>    
             <div class="col-lg-2"> </div>
             <div class="col-lg-8  row  py-5">
