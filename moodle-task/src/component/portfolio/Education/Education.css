@@ -9,9 +9,7 @@
 .aboutdive{
     
    padding-bottom: 6%;
-    background-color:#131314;
-
-    
+   background-color:#131314;
   
 }
 .mainp
@@ -22,20 +20,21 @@
   font-family: Lora;
 }
 
-.headp {
+.headp 
+{
     
     text-transform: capitalize;
     color: #4CAF50;
     font-family: Lora;
-  }
+}
   .headp:hover
-  {
+{
    
     padding: 10px;
    
     color: white;
   text-shadow: 2px 2px 4px #000000;
-  }
+}
   
 .evalimg:hover
 {
@@ -47,11 +46,13 @@
   padding: 10px;
   box-shadow: 5px 10px 8px 10px #888888;
 }
-.fan {
-    padding: 1em;
-    width: 100%;
+
+.fan 
+{
    
-    box-sizing: border-box;
+   padding: 1em;
+   width: 100%;
+   box-sizing: border-box;
    border-bottom: solid 2px white;
    background-color: black;
     
@@ -70,7 +71,9 @@
                       linear-gradient(175deg, rgba(0,0,0,0) 70%, #000a0b 70%),
                       linear-gradient( 85deg, rgba(0,0,0,0) 80%, #0d0e0e 80%);
   }
-  .schoolcolg  {
+  .schoolcolg
+
+  {
     width:150px;
     height: 150px;
   }
@@ -89,7 +92,9 @@
       box-shadow: inset;
       
   }
-  @keyframes mymovestyle {
+  @keyframes mymovestyle 
+  {
       50% {transform: rotate(15deg);}
-    }
+    
+  }
 

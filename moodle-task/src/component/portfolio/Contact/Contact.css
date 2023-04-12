@@ -3,7 +3,7 @@
     width: 100%;
     height: 200px;
     box-sizing: border-box;
-   border-bottom: solid 2px white;
+    border-bottom: solid 2px white;
     /* At the bottom of our background stack,
        let's have a misty grey solid color */
     background-color: #0d0d0d;
@@ -27,27 +27,22 @@
                       linear-gradient( 85deg, rgba(0,0,0,0) 80%, #111212 80%);
   }
 
-  .aboutdiv
-  {
-    
+.aboutdiv
+{
     max-height: 120vh;
-    
-  
 }
 
-.headpc {
-    
-  
-   color: #4CAF50;
-   font-family: Lora;
+.headpc 
+{
+
+      color: #4CAF50;
+      font-family: Lora;
  }
  .headpc:hover
  {
-  
-   padding: 10px;
-  
-   color: white;
- text-shadow: 2px 2px 4px #000000;
+      padding: 10px;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
  }
  .evalimgc:hover
 {
