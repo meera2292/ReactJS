@@ -14,9 +14,9 @@ export function Contact(){
     return(
 
         <>
-        <div class="col-lg-12 container-fluid border border-light  mx-auto">
+        <div class="col-lg-12 container-fluid border border-light bg-light  mx-auto">
        
-            <div class="col-lg-12 container-fluid bg-light rounded-3 py-5  mx-auto">
+            <div class="col-lg-12 container-fluid  rounded-3 py-5  mx-auto">
                     
             <div class="container-fluid row"> 
             
