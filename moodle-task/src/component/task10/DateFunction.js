@@ -29,11 +29,11 @@ export function DateFunction(){
         <>
              <div class="container-fluid row  mx-auto mbgdate">
                 <div class="col-lg-4"></div>
-                <div class="col-lg-4  justify-content-center bg-white  rounded-3 py-5 mt-5 mb-5 mx-auto " >
+                <div class="col-lg-4  justify-content-center bg-black  rounded-3 py-5 mt-5 mb-5 mx-auto " >
             
-                    <input type="date"  id="mydate"/>
-                    <input class="bg-info m-3" type="button"  value="Submit" onClick={datecal}></input>
-                    <h1>{calcdate}</h1>
+                    <input type="date" class="col-6 m-5 inpdate bg-danger"  id="mydate"/>
+                    <input class="btn btn-danger m-2 rounded-3 " type="button"  value="Submit" onClick={datecal}></input>
+                    <p class="text-danger m-5 fs-2">Your Course will end at</p><span><h1 class="text-danger m-5 ">{calcdate}</h1></span>
                
                 </div>
                 <div class="col-lg-4"></div>
