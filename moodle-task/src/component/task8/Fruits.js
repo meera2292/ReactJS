@@ -16,7 +16,7 @@ export function Fruits(){
 
         <>
 
-        <div class="container-fluid row aboutdiv  bg-warning mx-auto">
+        <div class="container-fluid row aboutdivf  bg-warning mx-auto">
         <h1 className="text-center">Bob ate <span className="text-white">{mangoes}</span > Mangoes and <span className="text-white">{bananas}</span> Bananas</h1>
             <div class="col-lg-2">
 
