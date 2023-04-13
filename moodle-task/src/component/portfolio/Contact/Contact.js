@@ -22,8 +22,8 @@ export function Contact(){
             
             <div class="col-lg-6 container-fluid"><p class="justify-content-center text-warning fw-bold fs-1 headpcc">Reach Out To me!</p></div>
             <div class="col-lg-6 container-fluid ms-6 float-right">
-                <p class="justify-content-center text-secondary fw-bold fs-12">mailme:&nbsp;<span class="text-primary headpc">meeracrazy@gmail.com</span></p>
-                <p class="justify-content-center text-secondary fw-bold fs-6">contactme:&nbsp;<span class="text-primary headpc">0909090909</span></p>
+                <p class="justify-content-center text-secondary fw-bold fs-12">mailme:&nbsp;<span class="text-primary headpc">meera2292@gmail.com</span></p>
+                <p class="justify-content-center text-secondary fw-bold fs-6">contactme:&nbsp;<span class="text-primary headpc">9562633125</span></p>
                 <p class="justify-content-center text-secondary fw-bold fs-6">address:&nbsp;<span class="text-primary headpc">Oak,Saravanampatty,Coimbatore</span></p>
              
             </div>
