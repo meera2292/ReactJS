@@ -10,7 +10,7 @@ export function Product(){
     return(
         <>
         <div className="conatiner-fluid text-dark mx-auto">
-            <h1 className="conatiner-fluid text-dark ms-3 text-center">Hi Hurry Shopping!!!</h1>
+            <h1 className="conatiner-fluid text-dark ms-3 text-center"> Shopping!!!</h1>
             <div className="col-lg-12 container-fluid ms-3 row">
             {
                 details.map((value,index)=>(

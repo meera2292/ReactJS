@@ -1,0 +1,14 @@
+.Simghook
+{
+   background-color: black;
+}
+
+.mbghook
+{
+    height: 90vh;
+    background-image: url('pexels-photo-hooks.jpeg');
+    background-size: cover;
+    z-index: 0;
+   
+  
+}
