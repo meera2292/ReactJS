@@ -30,4 +30,25 @@ a.connect(function (error)
 }
 )
 
+add.get('/details',(request,response)=>{
+
+    let sql="select * from user_reg";
+    a.query(sql,(error,result)=>{
+        if(error){
+            response.send(error);
+        }
+        else
+        {
+            response.send(result);
+        }
+
+
+    })
+   
+})
+
+add.listen(1400,()=>{
+    console.log("running in port 1400 port");
+})
+
 

@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-import axios from "axios";
-
 export function UserDetails() {
 
     const[values,setValues] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:8080/crud/getAll')
-        .then((res) => 
-        {
-            console.log(res);
-            setValues(res.data.jData);
-        })
+        fetch('http://localhost:1400/details')
+        .then((response) => response.json())
+        .then(result => setValues(result))
     },[])
 
     return(
@@ -32,7 +27,7 @@ export function UserDetails() {
                         values.map((value,index) => (
                             <>
                                 <tr>
-                                    <td>{value.sNo}</td>
+                                    <td>{value.sno}</td>
                                     <td>{value.firstName}</td>
                                     <td>{value.lastName}</td>
                                     <td>{value.mobnum}</td>

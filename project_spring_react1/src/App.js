@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -7,6 +7,7 @@ import { Menu } from './component/Menu/Menu';
 import { Login } from './component/Login/Login';
 import {SignIn} from './component/Register/SignIn'
 import { UserDetails } from './component/ListDetails/UserDetails';
+import { Nodeconnection } from './component/Nodeconnection';
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
     <Route path='/Login' element={[<Menu/>,<Login/>]}></Route>
     <Route path='/SignIn' element={[<Menu/>,<SignIn/>]}></Route>
     <Route path='/UserDetails' element={[<Menu/>,<UserDetails/>]}></Route>
-    
+    <Route path='/details' element={<Nodeconnection/>}></Route>
    </Routes>
    
    
    </BrowserRouter>
+
     </>
   );
 }
