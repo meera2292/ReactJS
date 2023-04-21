@@ -1,0 +1,43 @@
+Create database employeedetails:
+
+Create Table:
+
+CREATE TABLE `aagnidetails` (
+  `sno` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `address` varchar(150) DEFAULT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  `pincode` bigint DEFAULT NULL,
+  `country` varchar(45) DEFAULT NULL,
+  `status` tinyint DEFAULT NULL,
+  PRIMARY KEY (`sno`)
+)
+---------------------------------------------------------------------------------------------------
+Server Path:
+
+
+C:\Users\tomge\Documents\GIT\ReactJS\Aagni\server
+
+------------------------------------------------------------------------
+
+
+End Points:
+
+Get all user details:
+'/View'
+
+Post user details:
+'/NewUser'
+
+Delete user details:
+/Delete
+
+Get single user details:
+'/Viewcustomeretails/:sno'
+
+Get the user details for update:
+'/View/:sno'
+
+put the user updated details:
+/EditDetails/:sno
+-----------------------------------------------------------------------------------

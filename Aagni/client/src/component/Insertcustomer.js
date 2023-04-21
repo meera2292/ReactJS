@@ -50,8 +50,8 @@ export function Insertcustomer()
             <form className="row g-3 py-5" onSubmit={adddetails} >
 
                             <div className="col-md-6">
-                                <label  className="form-label">Name</label>
-                                <input type="text" className="form-control" id="inputname"  />
+                                <label  className="form-label ">Name</label>
+                                <input type="text" className="form-control " id="inputname"  />
                             </div>
                             <div className="col-md-6">
                                 <label  className="form-label">Address</label>

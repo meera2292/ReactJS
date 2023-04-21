@@ -64,9 +64,9 @@ export function EditDetails() {
 
     return (
         <>
-            <div className="container-fluid col-lg-6 border border-dark bg-light py-3">
+            <div className="container-fluid col-lg-4  bg-info py-3 mt-5">
                 <div className="mt-5 pt-5">
-                    <h3 className="text-center text-info fw-bold fs-2">Update Customer Details</h3>
+                <h3 className="text-center fw-bold fs-1 text-secondary mb-3">UPDATE CUSTOMER DETAILS</h3>
                     <form onSubmit={addcustomer}>
                         <label className="form-label"> Name</label>
                         <input type="text" name="name" className="form-control"  placeholder="Enter Your Name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -84,7 +84,7 @@ export function EditDetails() {
                         <input type="text" name="country" className="form-control"  placeholder="Enter Your country" value={country} onChange={(e) => setCountry(e.target.value)} />
 
 
-                        <input type="submit" value="submit" className="rounded-3 mt-2 text-center" />
+                        <input type="submit" value="Update" className="rounded-3 mt-2 text-center mt-3 fw-bold text secondary fs-5" />
 
                     </form>
                 </div>

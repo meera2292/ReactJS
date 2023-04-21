@@ -37,27 +37,30 @@ export function Viewcustomeretails() {
 
     return (
         <>
-            <div className=" container-fluid col-lg-6 border border-dark bg-light py-3">
-                <div className=" mt-5 pt-5">
-                    <h3 className="text-center fw-bold fs-2">Customer Details</h3>
+            <div className=" container-fluid col-lg-4  bg-info py-3 mt-5">
+
+                <div className=" mt-5 py-5">
+                <Link to='/'><input type="Button" value="Home<=" className="rounded-3 mt-2 mb-3 float-end fw-bold text-secondary" /></Link>
+                    <h3 className="text-center fw-bold fs-1 text-secondary mb-3">CUSTOMER DETAILS</h3>
+                   
                     <form >
-                        <label className="form-label"> Name</label>
-                        <input type="text" name="firstname" className="form-control"   value={name} />
+                       
+                        <input type="text" name="firstname" className="form-control text-dark fw-bold fs-5 mb-3" disabled  value={name} />
 
-                        <label className="form-label">Address</label>
-                        <input type="text" name="address" className="form-control"   value={address} />
+                      
+                        <input type="text" name="address" className="form-control text-dark fw-bold fs-5  mb-3" disabled   value={address} />
 
-                        <label className="form-label">City</label>
-                        <input type="text" name="city" className="form-control"   value={city} />
+                       
+                        <input type="text" name="city" className="form-control text-dark fw-bold fs-5  mb-3" disabled   value={city} />
 
-                        <label className="form-label">Pin Code</label>
-                        <input type="number" name="pincode" className="form-control"   value={pincode} />
+                       
+                        <input type="number" name="pincode" className="form-control text-dark fw-bold fs-5  mb-3" disabled   value={pincode} />
 
-                        <label className="form-label">Country</label>
-                        <input type="text" name="country" className="form-control"   value={country} />
+                        
+                        <input type="text" name="country" className="form-control text-dark fw-bold fs-5  mb-3" disabled   value={country} />
 
 
-                        <Link to='/'><input type="Button" value="Home" className="rounded-3 mt-2" /></Link>
+                       
 
                     </form>
                 </div>

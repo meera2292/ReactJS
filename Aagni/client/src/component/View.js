@@ -30,7 +30,7 @@ export function View()
                 window.location.reload();
             }
             else if (res.data.status === 'success'){
-                alert('deleted');
+                alert('Successfully deleted the record');
                 window.location.reload();
             }
 
