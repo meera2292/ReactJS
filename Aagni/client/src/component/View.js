@@ -12,7 +12,7 @@ export function View()
 {
     const [values,setValues]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:4000/View')
+        fetch('http://localhost:4001/View')
         .then((response)=>response.json())
         .then(result=>setValues(result))
 
@@ -23,7 +23,7 @@ export function View()
         var dataString = {sno:sno};
         var config = {headers:{"enctype":"multipart/form-data"}};
 
-        axios.post('http://localhost:4000/Delete',dataString,config)
+        axios.post('http://localhost:4001/Delete',dataString,config)
         .then(function(res){
             if(res.data.status === 'error') {
                 alert('error');
@@ -48,8 +48,8 @@ export function View()
         <>
           <div className="container-fluid col-lg-8 t py-5">
            <div ><br></br>
-                <p class="fw-bold fs-1 text-Secondary">Customer<span class="text-success ">Details</span> </p><br></br>
-                <Link to='/Insertcustomer' class="fs-3 fw-bold text-warning">Add New Customer </Link><br></br>
+                <p class="fw-bold fs-1 text-Secondary ">Customer<span class="text-success ">Details</span> </p><br></br>
+                <Link to='/Insertcustomer' class="fs-4 fw-bold text-warning float-end" >Add New Customer </Link><br></br>
                 
            </div>
            <br></br>
@@ -79,9 +79,10 @@ export function View()
                                     <td>{value.city}</td>
                                     <td>{value.pincode}</td>
                                     <td>{value.country}</td>
-                                    <td><FontAwesomeIcon icon={faEye} ></FontAwesomeIcon>&nbsp;&nbsp;
+                                    <td><Link to={"/Viewcustomeretails/"+value.sno}><FontAwesomeIcon className="text-success" icon={faEye} ></FontAwesomeIcon></Link>&nbsp;
                                     <span><Link to={"/EditDetails/"+value.sno}><FontAwesomeIcon icon={faPen} ></FontAwesomeIcon></Link></span>&nbsp;&nbsp;
-                                    <span><td><input type="button" onClick={()=>{deleterecord(value.sno)}} class="bg-danger"  value="Delete"/></td></span>
+                                    <span><td><FontAwesomeIcon className="text-danger" icon={faTrash} onClick={()=>{deleterecord(value.sno)}} ></FontAwesomeIcon></td></span>
+
                                     
                                     </td>
                                     </tr>

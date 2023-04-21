@@ -18,7 +18,7 @@ export function EditDetails() {
 
 
     useEffect(() => {
-        fetch("http://localhost:4000/View/" + sno + "")
+        fetch("http://localhost:4001/View/" + sno + "")
             .then(response => response.json())
             .then(function (res) {
                 setName(res[0].name);
@@ -43,7 +43,7 @@ export function EditDetails() {
         event.preventDefault();
         var datastring = new FormData(event.target);
         var config = { headers: { "enctype": "multipart/form-data" } };
-        await axios.put('http://localhost:4000/EditDetails/' + sno + '', { name, address, city, pincode, country }, config)
+        await axios.put('http://localhost:4001/EditDetails/' + sno + '', { name, address, city, pincode, country }, config)
             .then(function (res) {
                 if (res.data.status === 'error') {
                     alert('error');
@@ -64,9 +64,9 @@ export function EditDetails() {
 
     return (
         <>
-            <div className="col-lg-4 bg-light container-fluid ">
+            <div className="container-fluid col-lg-6 border border-dark bg-light py-3">
                 <div className="mt-5 pt-5">
-                    <h3 className="text-center text-secondary fw-bold fs-2">Update Customer Details</h3>
+                    <h3 className="text-center text-info fw-bold fs-2">Update Customer Details</h3>
                     <form onSubmit={addcustomer}>
                         <label className="form-label"> Name</label>
                         <input type="text" name="name" className="form-control"  placeholder="Enter Your Name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -84,7 +84,7 @@ export function EditDetails() {
                         <input type="text" name="country" className="form-control"  placeholder="Enter Your country" value={country} onChange={(e) => setCountry(e.target.value)} />
 
 
-                        <input type="submit" value="submit" className="rounded-3 mt-2" />
+                        <input type="submit" value="submit" className="rounded-3 mt-2 text-center" />
 
                     </form>
                 </div>

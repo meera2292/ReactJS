@@ -27,7 +27,7 @@ export function Insertcustomer()
             alert("Enter country")
 
         } else {
-            await axios.post("http://localhost:4000/NewUser", { name, address, city, pincode, country }, config)
+            await axios.post("http://localhost:4001/NewUser", { name, address, city, pincode, country }, config)
                 .then(function (res) {
                     if (res.data.status === 'error') {
                         alert('error')
@@ -44,7 +44,7 @@ export function Insertcustomer()
         <>
           <div className="container-fluid col-lg-8 border border-dark bg-light py-5">
            <div class="fw-bold fs-4 text-Secondary">
-                <p class="fw-bold fs-4 text-info">Add<span class="text-success ">&nbsp;Customer</span> </p>
+                <p class="fw-bold fs-4 text-info">Add New<span class="text-success ">&nbsp;Customer </span> </p>
            </div>
             <div>
             <form className="row g-3 py-5" onSubmit={adddetails} >

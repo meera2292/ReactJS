@@ -124,8 +124,26 @@ add.put('/EditDetails/:sno',(request,response)=>{
 })
 
 
+//retreive specific file
 
 
-add.listen(4000,()=>{
-    console.log("running in port 4000 port");
+
+add.get('/Viewcustomeretails/:sno',(request,response)=>{
+    let sno = request.params.sno;
+    let sql = 'select * from aagnidetails where sno=?';
+    a.query(sql,[sno],(error,result)=>{
+        if(error){
+            response.send(error);
+        }
+        else{
+            response.send(result);
+        }
+    })
+})
+
+
+
+
+add.listen(4001,()=>{
+    console.log("running in port 4001 port");
 });
