@@ -8,6 +8,7 @@ add.use(cors());
 add.use(bodyparser.json());
 add.use(express.json());
 add.use(express.static('public'));
+
 //connection
 let a= new database.createConnection(
     {
@@ -29,7 +30,7 @@ a.connect(function (error)
     }
 }
 )
-
+//view details in table
 add.get('/View',(request,response)=>{
 
     let sql="select * from aagnidetails";
@@ -47,8 +48,84 @@ add.get('/View',(request,response)=>{
    
 })
 
-add.listen(3000,()=>{
-    console.log("running in port 3000 port");
+//deletion
+add.post('/Delete',(request,response)=>{
+    let sno = request.body.sno;
+    let sql = 'delete from aagnidetails where sno = ?';
+
+    a.query (sql,[sno],(error,result)=>{
+        if(error){
+            let s = {"status":"error"};
+            response.send(s);
+        }
+        else{
+            let s = {"status":"success"};
+            response.send(s)
+        }
+    })
+})
+
+//insertion customer
+add.post('/NewUser',(request,response)=>{
+    let {name,address,city,pincode,country} = request.body;
+    let sql = 'insert into aagnidetails(name,address,city,pincode,country,status) values (?,?,?,?,?,?)';
+    a.query(sql,[name,address,city,pincode,country,1],(error,result)=>{
+        if (error) {
+            let s = {"status":"error"}
+            response.send(s);
+        }
+        else{
+            let s = {"status":"success"}
+            response.send(s);
+        }
+    })
 })
 
 
+
+//updation
+
+
+//getdetails
+
+
+add.get('/View/:sno',(request,response)=>{
+    let sno = request.params.sno;
+    let sql = 'select * from aagnidetails where sno=?';
+    a.query(sql,[sno],(error,result)=>{
+        if(error){
+            response.send(error);
+        }
+        else{
+            response.send(result);
+        }
+    })
+})
+
+//update the details
+
+
+add.put('/EditDetails/:sno',(request,response)=>{
+    let sno = request.params.sno;
+    let {name,address,city,pincode,country} = request.body;
+    
+    let sql = 'update aagnidetails set name=?,address=?,city=?,pincode=?,country=? where sno=?';
+    a.query(sql,[name,address,city,pincode,country,sno],(error,result)=>{
+        if(error){
+            let s = {"status":"error"};
+            response.send(s);
+        }
+        else{
+            let s = {"status":"success"};
+            response.send(s)
+        }  
+
+})
+})
+
+
+
+
+add.listen(4000,()=>{
+    console.log("running in port 4000 port");
+});

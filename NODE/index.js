@@ -14,7 +14,7 @@ let a= new database.createConnection(
         host:"localhost",
         user:"root",
         password:"123456",
-        database:"moodleusers"
+        database:"employeedetails"
 
     }
 )
@@ -30,9 +30,9 @@ a.connect(function (error)
 }
 )
 
-add.get('/details',(request,response)=>{
+add.get('/View',(request,response)=>{
 
-    let sql="select * from user_reg";
+    let sql="select * from aagnidetails";
     a.query(sql,(error,result)=>{
         if(error){
             response.send(error);
