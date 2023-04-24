@@ -6,6 +6,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.js';
 export function Insertcustomer()
 {
     const adddetails = async (event) => {
+        
+        
         event.preventDefault();
 
         var config = { headers: { "enctype": "multipart/form-data" } };
@@ -27,7 +29,7 @@ export function Insertcustomer()
             alert("Enter country")
 
         } else {
-            await axios.post("http://localhost:4001/NewUser", { name, address, city, pincode, country }, config)
+            await axios.post("http://localhost:4000/NewUser", { name, address, city, pincode, country }, config)
                 .then(function (res) {
                     if (res.data.status === 'error') {
                         alert('error')

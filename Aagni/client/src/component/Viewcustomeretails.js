@@ -16,7 +16,7 @@ export function Viewcustomeretails() {
 
 
     useEffect(() => {
-        fetch("http://localhost:4001/Viewcustomeretails/" + sno + "")
+        fetch("http://localhost:4000/Viewcustomeretails/" + sno + "")
             .then(response => response.json())
             .then(function (res) {
                 setName(res[0].name);

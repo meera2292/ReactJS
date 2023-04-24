@@ -12,7 +12,7 @@ export function View()
 {
     const [values,setValues]=useState([]);
     useEffect(()=>{
-        fetch('http://localhost:4001/View')
+        fetch('http://localhost:4000/View')
         .then((response)=>response.json())
         .then(result=>setValues(result))
 
@@ -23,7 +23,7 @@ export function View()
         var dataString = {sno:sno};
         var config = {headers:{"enctype":"multipart/form-data"}};
 
-        axios.post('http://localhost:4001/Delete',dataString,config)
+        axios.post('http://localhost:4000/Delete',dataString,config)
         .then(function(res){
             if(res.data.status === 'error') {
                 alert('error');

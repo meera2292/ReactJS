@@ -25,9 +25,10 @@ export function Menu(){
                   <li class="nav-item"><Link to='/Feedback' class="nav-link active">Feedback</Link></li>
                   <li class="nav-item"><Link to='/DateFunction' class="nav-link active">DateFunction</Link></li>
                   <li class="nav-item"><Link to='/Hooks' class="nav-link active">Hooks</Link></li>
-                  <li class="nav-item"><Link to='/Product' class="nav-link active">Product</Link>
+                  <li class="nav-item"><Link to='/Product' class="nav-link active">Product</Link> </li>
+                  <li class="nav-item"><Link to='/Weather' class="nav-link active">Weather</Link> </li>
                   
-                  </li>
+                 
                 </ul>
              
               </div>

@@ -18,7 +18,7 @@ export function EditDetails() {
 
 
     useEffect(() => {
-        fetch("http://localhost:4001/View/" + sno + "")
+        fetch("http://localhost:4000/View/" + sno + "")
             .then(response => response.json())
             .then(function (res) {
                 setName(res[0].name);
@@ -43,7 +43,7 @@ export function EditDetails() {
         event.preventDefault();
         var datastring = new FormData(event.target);
         var config = { headers: { "enctype": "multipart/form-data" } };
-        await axios.put('http://localhost:4001/EditDetails/' + sno + '', { name, address, city, pincode, country }, config)
+        await axios.put('http://localhost:4000/EditDetails/' + sno + '', { name, address, city, pincode, country }, config)
             .then(function (res) {
                 if (res.data.status === 'error') {
                     alert('error');

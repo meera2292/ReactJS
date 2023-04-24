@@ -23,6 +23,7 @@ import { Skills } from './component/portfolio/Skills/Skills';
 import { Certification } from './component/portfolio/Certifications/Certification';
 import {Education} from './component/portfolio/Education/Education';
 import {Contact} from './component/portfolio/Contact/Contact';
+import { Weather } from './component/Weather/Weather';
 
 
 function App() 
@@ -52,6 +53,7 @@ function App()
     <Route path='/DateFunction' element={[<Menu/>,<DateFunction/>]}></Route>
     <Route path='/Hooks' element={[<Menu/>,<Hooks/>]}></Route>
     <Route path='/Product' element={[<Menu/>,<Product/>]}></Route>
+    <Route path='/Weather' element={[<Menu/>,<Weather/>]}></Route>
    </Routes>
    
    

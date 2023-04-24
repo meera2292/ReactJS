@@ -30,6 +30,25 @@ a.connect(function (error)
     }
 }
 )
+//check login credentials
+add.get('/Login',(request,response)=>{
+    
+    let sql="select * from logintb where username=? and password=? and status=?";
+    a.query(sql,[username,password,1],(error,result)=>{
+        if(error)
+        {
+            response.send(error);
+
+        }
+        else
+        {
+            response.send(result);
+        }
+    })
+
+}
+)
+
 //view details in table
 add.get('/View',(request,response)=>{
 
@@ -144,6 +163,6 @@ add.get('/Viewcustomeretails/:sno',(request,response)=>{
 
 
 
-add.listen(4001,()=>{
-    console.log("running in port 4001 port");
+add.listen(4000,()=>{
+    console.log("running in port 4000 port");
 });
